@@ -5,6 +5,8 @@ By Renata D.
 
 A web app based shopping cart application made with Ruby on Rails.
 
+![Gem](https://img.shields.io/gem/v/rails?color=sucess)
+
 ## 📌🔗 Links:
 
 * Portfolio: [Github](https://github.com/Seraphyne/depot)
