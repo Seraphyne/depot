@@ -8,7 +8,7 @@
 #---
 # encoding: utf-8
 Product.delete_all
-Product.create!(title: 'Docker for Rails Developers',
+Product.create!(title: 'Ruby Performance Optimization',
                 description:
                     %{<p>
       <em>Build, Ship, and Run Your Applications Everywhere</em>
@@ -24,7 +24,7 @@ Product.create!(title: 'Docker for Rails Developers',
                 image_url: 'adrpo.jpg',
                 price: 38.00)
 # . . .
-Product.create!(title: 'Build Chatbot Interactions',
+Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
                 description:
                     %{<p>
       <em>Responsive, Intuitive Interfaces with Ruby</em>
@@ -57,3 +57,60 @@ Product.create!(title: 'Programming Crystal',
       </p>},
                 image_url: 'crystal.jpg',
                 price: 40.00)
+
+Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
+    description:
+                    %{<p>
+        <em>Lorem ipsum dolor sit amet</em>
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+        </p>},
+                image_url: '7apps.jpg',
+                price: 35.99)
+
+Product.create!(title: 'CoffeeScript',
+    description:
+                    %{<p>
+        <em>Lorem ipsum dolor sit amet</em>
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+        </p>},
+                image_url: 'cs.jpg',
+                price: 25.00)
+
+Product.create!(title: 'Programming Ruby',
+    description:
+                    %{<p>
+        <em>Lorem ipsum dolor sit amet</em>
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+        </p>},
+                image_url: 'ruby.jpg',
+                price: 57.00)
+
+Product.create!(title: 'Rails Test Prescriptions',
+    description:
+                    %{<p>
+        <em>Lorem ipsum dolor sit amet</em>
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        anim id est laborum.
+        </p>},
+                image_url: 'rtp.jpg',
+                price: 42.00)
+                
