@@ -6,11 +6,12 @@
 # We make no guarantees that this code is fit for any purpose.
 # Visit http://www.pragmaticprogrammer.com/titles/rails6 for more book information.
 #---
-# encoding: utf-8
+# frozen_string_literal: true
+
 Product.delete_all
 Product.create!(title: 'Ruby Performance Optimization',
                 description:
-                    %{<p>
+                    %(<p>
       <em>Build, Ship, and Run Your Applications Everywhere</em>
       Docker does for DevOps what Rails did for web development—it gives you
       a new set of superpowers. Gone are “works on my machine” woes and lengthy
@@ -20,13 +21,13 @@ Product.create!(title: 'Ruby Performance Optimization',
       fundamental to software development. Go from zero all the way to production
       as Docker transforms the massive leap of deploying your app in the cloud
       into a baby step.
-      </p>},
+      </p>),
                 image_url: 'adrpo.jpg',
                 price: 38.00)
 # . . .
 Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
                 description:
-                    %{<p>
+                    %(<p>
       <em>Responsive, Intuitive Interfaces with Ruby</em>
       The next step in the evolution of user interfaces is here.
       Chatbots let your users interact with your service in their
@@ -37,14 +38,14 @@ Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
       From novices to experts, chatbots are an area in which everyone
       can participate. Exercise your creativity by creating chatbot
       skills for communicating, information, and fun.
-      </p>},
+      </p>),
                 image_url: 'dcbang.jpg',
                 price: 20.00)
 # . . .
 
 Product.create!(title: 'Programming Crystal',
                 description:
-                    %{<p>
+                    %(<p>
       <em>Create High-Performance, Safe, Concurrent Apps</em>
       Crystal is for Ruby programmers who want more performance or for
       developers who enjoy working in a high-level scripting environment. Crystal
@@ -54,63 +55,62 @@ Product.create!(title: 'Programming Crystal',
       modern language, combined with the power of types and modern concurrency
       tooling. Now you can write beautiful code that runs faster, scales better,
       and is a breeze to deploy.
-      </p>},
+      </p>),
                 image_url: 'crystal.jpg',
                 price: 40.00)
 
 Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
-    description:
-                    %{<p>
+                description:
+                    %(<p>
         <em>Lorem ipsum dolor sit amet</em>
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
         anim id est laborum.
-        </p>},
+        </p>),
                 image_url: '7apps.jpg',
                 price: 35.99)
 
 Product.create!(title: 'CoffeeScript',
-    description:
-                    %{<p>
+                description:
+                    %(<p>
         <em>Lorem ipsum dolor sit amet</em>
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
         anim id est laborum.
-        </p>},
+        </p>),
                 image_url: 'cs.jpg',
                 price: 25.00)
 
 Product.create!(title: 'Programming Ruby',
-    description:
-                    %{<p>
+                description:
+                    %(<p>
         <em>Lorem ipsum dolor sit amet</em>
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
         anim id est laborum.
-        </p>},
+        </p>),
                 image_url: 'ruby.jpg',
                 price: 57.00)
 
 Product.create!(title: 'Rails Test Prescriptions',
-    description:
-                    %{<p>
+                description:
+                    %(<p>
         <em>Lorem ipsum dolor sit amet</em>
-        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
         anim id est laborum.
-        </p>},
+        </p>),
                 image_url: 'rtp.jpg',
                 price: 42.00)
-                

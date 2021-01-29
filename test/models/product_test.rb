@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class ProductTest < ActiveSupport::TestCase
@@ -38,8 +40,8 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test 'image_url' do
-    ok = %w{fred.gif fred.png fred.jpg FRED.JPG FRED.Jpg http://a.b.c/x/y/z/fred.gif}
-    bad = %w{fred.doc fred.gif/more fred.gif.more}
+    ok = %w[fred.gif fred.png fred.jpg FRED.JPG FRED.Jpg http://a.b.c/x/y/z/fred.gif]
+    bad = %w[fred.doc fred.gif/more fred.gif.more]
 
     ok.each do |image_url|
       assert new_product(image_url).valid?, "#{image_url} shouldn't be invalid"
@@ -52,9 +54,9 @@ class ProductTest < ActiveSupport::TestCase
 
   test 'product not valid without unique title' do
     product = Product.new(title: products(:ruby).title,
-                         description: 'yyy',
-                         price: 1,
-                         image_url: 'fred.gif')
+                          description: 'yyy',
+                          price: 1,
+                          image_url: 'fred.gif')
     assert product.invalid?
     # assert_equal ['has already been taken'], product.errors[:title]
     assert_equal [I18n.translate('errors.messages.taken')], product.errors[:title]

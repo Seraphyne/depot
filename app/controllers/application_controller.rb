@@ -1,14 +1,15 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
-    before_action :authorize
+  before_action :authorize
     # before_action :set_i18n_locale_from_params
-  
+
     protected
-      def authorize
-        unless User.find_by(id: session[:user_id])
-          redirect_to login_url, notice: 'Please Log In'
-        end
-      end
-  
+
+  def authorize
+    redirect_to login_url, notice: 'Please Log In' unless User.find_by(id: session[:user_id])
+  end
+
     #   def set_i18n_locale_from_params
     #     if params[:locale]
     #       if I18n.available_locales.map(&:to_s).include?(params[:locale])
