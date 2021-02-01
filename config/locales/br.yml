@@ -31,12 +31,12 @@ br:
   store:
     index:
       title_html: "Seu Catálogo Pragmático"
-      add_html: "Adicionar ao Carrinho de Compras"
+      add_html: "Adicionar ao Carrinho"
 
   carts:
     cart:
       title: "Carrinho de Compras"
-      empty: "Carrinho Vazio"
+      empty: "Esvaziar Carrinho"
       checkout: "Comprar"
 
 
@@ -44,9 +44,9 @@ br:
     currency:
       format:
         unit: "$US "
-        precision: 2
-        separator: ","
-        delimiter: "."
+        # precision: 2
+        # # separator: "."
+        # # delimiter: ","
         # format: "%n&nbsp;%u"
 
   orders:
